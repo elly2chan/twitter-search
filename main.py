@@ -4,11 +4,12 @@ from pymongo import MongoClient
 
 
 def main():
-    
-    # Connect to MongoDB Cloud
-    client = MongoClient("mongodb+srv://admin:admin@cluster0.mxr4yut.mongodb.net/?retryWrites=true&w=majority",
-                         tls=True, tlsAllowInvalidCertificates=True)
+
+    # Connect to MongoDB Cloud by providing your connection string and credentials
+    client = MongoClient("Provide your connection string here")
+    # Provide your database name
     database = client["twitter_search"]
+    # Provide your database collection
     collection = database["tweets"]
 
     # Open initial data folder and insert jsons into database
