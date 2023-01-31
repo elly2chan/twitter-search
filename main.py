@@ -4,6 +4,7 @@ from pymongo import MongoClient
 
 
 def main():
+    
     # Connect to MongoDB Cloud
     client = MongoClient("mongodb+srv://admin:admin@cluster0.mxr4yut.mongodb.net/?retryWrites=true&w=majority",
                          tls=True, tlsAllowInvalidCertificates=True)
